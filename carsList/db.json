@@ -1,0 +1,49 @@
+{
+  "productList": [
+    {
+      "Name": "carName",
+      "model": "Mercedes",
+      "comment": "2222154",
+      "box": "On-board computer",
+      "id": 7
+    },
+    {
+      "Name": "Highlander Hybrid",
+      "model": "Toyota",
+      "comment": "2019",
+      "box": "Hatch",
+      "id": 8
+    },
+    {
+      "Name": "car",
+      "model": "BMW",
+      "comment": "2013",
+      "box": "Alarm",
+      "id": 9
+    },
+    {
+      "Name": "Car",
+      "model": "Mitsubishi",
+      "comment": "descrption",
+      "box": "On-board computer",
+      "id": 10
+    },
+    {
+      "Name": "car",
+      "model": "Mitsubishi",
+      "comment": "hm",
+      "box": "Parking control",
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

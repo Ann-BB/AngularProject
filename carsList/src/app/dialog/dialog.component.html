@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>Add Car Form</h1>
+<div mat-dialog-content>
+  <form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input formControlName="Name" matInput placeholder="Name">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label >Car model</mat-label>
+      <mat-select formControlName="model"  placeholder="model">
+        <mat-option value="Audi">Audi</mat-option>
+        <mat-option value="BMW">BMW</mat-option>
+        <mat-option value="Mercedes">Mercedes</mat-option>
+        <mat-option value="Toyota">Toyota</mat-option>
+        <mat-option value="Mitsubishi">Mitsubishi</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Car description</mat-label>
+      <textarea formControlName="comment" matInput></textarea>
+    </mat-form-field>
+      <mat-label for="url" style="margin-right: 10px;">image:</mat-label>
+      <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" style="margin-bottom: 10px;">
+    <label for=""><h1>Car features</h1></label>
+    <mat-radio-group formControlName="box"  class="example-radio-group">
+      <mat-radio-button class="example-radio-button" *ngFor="let item of clist" [value]="item">
+        {{item}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>close</button>
+  <button mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+</div>
