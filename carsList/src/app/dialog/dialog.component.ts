@@ -48,9 +48,9 @@ export class DialogComponent implements OnInit {
             alert("upps!!! ERROR")
           }
         })
-      }else{
-        this.updateProduct()
       }
+    }else{
+        this.updateProduct()
     }
   }
   updateProduct(){

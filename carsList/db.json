@@ -1,13 +1,6 @@
 {
   "productList": [
     {
-      "Name": "carName",
-      "model": "Mercedes",
-      "comment": "2222154",
-      "box": "On-board computer",
-      "id": 7
-    },
-    {
       "Name": "Highlander Hybrid",
       "model": "Toyota",
       "comment": "2019",
@@ -31,9 +24,16 @@
     {
       "Name": "car",
       "model": "Mitsubishi",
-      "comment": "hm",
+      "comment": "can do it!!!",
       "box": "Parking control",
       "id": 11
+    },
+    {
+      "Name": "name",
+      "model": "Toyota",
+      "comment": "description",
+      "box": "Bluetooth",
+      "id": 12
     }
   ],
   "comments": [

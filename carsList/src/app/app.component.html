@@ -8,10 +8,7 @@
 </mat-toolbar>
 <div class="container">
   <div style="margin: 10px">
-    <mat-form-field appearance="standard">
-      <mat-label>List</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Car" #input>
-    </mat-form-field>
+
 
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource" matSort>
@@ -45,7 +42,7 @@
             <button mat-icon-button (click)="editProduct(row)" color="primary">
               <mat-icon>edit</mat-icon>
             </button>
-            <button (click)="deleteProduct(row.id)" mat-icon-button color="warn">
+            <button mat-icon-button (click)="deleteProduct(row.id)" color="warn">
               <mat-icon>delete</mat-icon>
             </button>
           </td>
@@ -56,7 +53,6 @@
 
 
         <tr class="mat-row" *matNoDataRow>
-          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
         </tr>
       </table>
 
